@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資產與負債表</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>資產負債表</h2>
+
+<!-- 分頁導航按鈕 -->
+<nav>
+    <button class="tab-btn active" data-tab="current-deposit">活存</button>
+    <button class="tab-btn" data-tab="fixed-deposit">定存</button>
+    <button class="tab-btn" data-tab="stocks">股票</button>
+    <button class="tab-btn" data-tab="funds">基金</button>
+    <button class="tab-btn" data-tab="liabilities">負債</button>
+</nav>
+
+<!-- 活存表格 -->
+<div id="current-deposit" class="tab active">
+    <table>
+        <caption>活存</caption>
+        <thead>
+            <tr>
+                <th>金額</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>XXX</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- 定存表格 -->
+<div id="fixed-deposit" class="tab">
+    <table>
+        <caption>定存</caption>
+        <thead>
+            <tr>
+                <th>金額</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>XXX</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- 股票表格，隨Firebase更新 -->
+<div id="stocks" class="tab">
+    <table>
+        <caption>股票</caption>
+        <thead>
+            <tr>
+                <th>種類</th>
+                <th>名稱</th>
+                <th>張數</th>
+                <th>金額</th>
+            </tr>
+        </thead>
+        <tbody id="stocks-body">
+            <!-- Firebase資料將會在此新增 -->
+        </tbody>
+    </table>
+</div>
+
+<!-- 基金表格，隨Firebase更新 -->
+<div id="funds" class="tab">
+    <table>
+        <caption>基金</caption>
+        <thead>
+            <tr>
+                <th>種類</th>
+                <th>名稱</th>
+                <th>金額</th>
+            </tr>
+        </thead>
+        <tbody id="funds-body">
+            <!-- Firebase資料將會在此新增 -->
+        </tbody>
+    </table>
+</div>
+
+<!-- 負債表格，隨Firebase更新 -->
+<div id="liabilities" class="tab">
+    <table>
+        <caption>負債</caption>
+        <thead>
+            <tr>
+                <th>種類</th>
+                <th>名稱</th>
+                <th>貸款金額</th>
+                <th>貸款年限</th>
+                <th>月付金</th>
+                <th>未還期數</th>
+            </tr>
+        </thead>
+        <tbody id="liabilities-body">
+            <!-- Firebase資料將會在此新增 -->
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
